@@ -546,14 +546,15 @@
   <!-- ============ MUSIC PLAYER ============ -->
   <!-- Put your song file (e.g. oursong.mp3) in the same folder as this html file -->
   <div id="music-player">
-    <button id="play-btn">♪ Perfect – Ed Sheeran</button>
-    <audio id="bg-song" src="oursong.mp3" loop></audio>
-    <script>
-      // Soft background music volume (20%)
-      document.getElementById('bg-song').volume = 0.2;
-    </script>
-  </div>
+  <button id="play-btn">♪ Perfect – Ed Sheeran</button>
 
+  <audio id="bg-song" src="oursong.mp3" loop></audio>
+
+  <script>
+    const song = document.getElementById('bg-song');
+    song.volume = 0.2;
+  </script>
+</div>
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="petal-trail" id="petalTrail"></div>
